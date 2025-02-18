@@ -93,7 +93,7 @@ yarn-error.log
 /.zed
 ```
 
-## BASE .env
+## BASE .env example
 
 APP_NAME=Laravel
 APP_ENV=local
