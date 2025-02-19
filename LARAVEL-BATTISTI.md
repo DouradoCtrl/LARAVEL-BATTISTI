@@ -271,7 +271,7 @@ Route::get('/produtos_query', function () {
 - cria a migration
 
 `php artisan migrate:fresh`
-- Deleta e gera denovo
+- Deleta todas as tabelas e rodas as migrations novamente
 
 **MIGRATION AVANÇADO**
 - Quando precisamos adicionar um novo campo a uma tabela
@@ -280,4 +280,16 @@ Route::get('/produtos_query', function () {
 - `reset` -> usado para voltar todas as migration
 - `refresh` -> voltar todas e rodar migrate novamente
 
+`php artisan make:migration add_category_to_products_table`
+- Adicionar coluna
 
+`php artisan migrate:rollback`
+- remover coluna
+
+`php artisan migrate:reset`
+- rollback de todas as migrações
+
+`php artisan migrate:refresh`
+- faz o rollback e o migrate
+
+``
