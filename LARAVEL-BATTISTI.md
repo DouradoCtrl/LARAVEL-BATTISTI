@@ -152,7 +152,7 @@ CLASSE QUE USA O LAYOUT COM HERANÇA
 
 ## COMO USAR PARÂMETROS NA ROTAS:
 - **Variáveis restritas as suas respectivas views ou controllers**
-![[parametros.png]]
+![Input de Busca](public/img/md/parametros.png)
 ### OBRIGATÓRIOS
 **{ID} = OBRIGATÓRIO**
 	
@@ -211,7 +211,8 @@ Route::get('/produtos_opcional/{id?}', function ($id = null) {
 ```
 
 ### QUERY PARAMETERS
-- [[Estrutura de URLs e Parâmetros de Consulta]]
+[Estrutura de URLs e Parâmetros de ConsultaEstrutura de URLs e Parâmetros de Consulta](public/notes/Estrutura%20de%20URLs%20e%20Parâmetros%20de%20Consulta.md)
+
 
 **Routes:**
 ```php
