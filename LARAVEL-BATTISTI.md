@@ -152,7 +152,7 @@ CLASSE QUE USA O LAYOUT COM HERANÇA
 
 ## COMO USAR PARÂMETROS NA ROTAS:
 - **Variáveis restritas as suas respectivas views ou controllers**
-![[Pasted image 20250215144506.png]]
+![[parametros.png]]
 ### OBRIGATÓRIOS
 **{ID} = OBRIGATÓRIO**
 	
@@ -272,10 +272,6 @@ Route::get('/produtos_query', function () {
 `php artisan migrate:fresh`
 - Deleta e gera denovo
 
-## MIGRATION V2
+**MIGRATION AVANÇADO**
 
 > CONCEITO
-
-ADICONAR COLUNA
-ROLL BACK
-- FAZER UM TESTE COM DADOS ADICIONADO NA TABELA E ADICIONAR UMA NOVA COLUNA
