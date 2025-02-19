@@ -274,5 +274,10 @@ Route::get('/produtos_query', function () {
 - Deleta e gera denovo
 
 **MIGRATION AVANÇADO**
+- Quando precisamos adicionar um novo campo a uma tabela
+- Cuidado ao dar fresh e apagar os dados existentes
+- `rollback` -> usado para voltar uma migration
+- `reset` -> usado para voltar todas as migration
+- `refresh` -> voltar todas e rodar migrate novamente
 
-> CONCEITO
+
