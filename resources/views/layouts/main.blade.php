@@ -30,26 +30,26 @@
                 </a>
                 <ul class="navbar-nav">
                     <li class="nav-item m-2">
-                        <a href="/" class="nav-link bg-danger rounded text-light fw-bold">Eventos</a>
+                        <a href="/" class="nav-link bg-primary rounded text-light fw-bold">Eventos</a>
                     </li>
                     <li class="nav-item m-2">
                         <a href="/events/create" class="nav-link bg-primary rounded text-light fw-bold">Criar Eventos</a>
                     </li>
                     <li class="nav-item m-2">
-                        <a href="/" class="nav-link bg-success rounded text-light fw-bold">Entrar</a>
+                        <a href="/" class="nav-link bg-primary rounded text-light fw-bold">Entrar</a>
                     </li>
                     <li class="nav-item m-2">
-                        <a href="/" class="nav-link bg-warning rounded text-light fw-bold">Cadastrar</a>
+                        <a href="/" class="nav-link bg-primary rounded text-light fw-bold">Cadastrar</a>
                     </li>
                     
                 </ul>
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container-fluid">
         @yield('content')
     
-        <footer>
+        <footer class="container mt-2">
             <p>Dourado Dev &copy; 2025</p>
         </footer>
 

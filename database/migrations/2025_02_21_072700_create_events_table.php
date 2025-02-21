@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('description');
-            $table->strig('city');
+            $table->string('city');
             $table->boolean('private');
             $table->timestamps();
         });

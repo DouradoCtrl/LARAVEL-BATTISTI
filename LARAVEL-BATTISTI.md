@@ -292,11 +292,84 @@ Route::get('/produtos_query', function () {
 `php artisan migrate:refresh`
 - faz o rollback e o migrate
 
-``
+`php artisan make:model Event`
+- cria o model
 
 # ElOQUENT
 - ORM do laravel
 - Cada tabela tem um model responsável pela interação entre as requisições ao banco 
 - A convenção para o Model é o nome em singular com a primeira letra maiúscula, enquanto a tabela é a entidade no plural: Event e events
 - No model faremos poucas alterações
+
+
+# Sintaxe Blade
+```php
+/* Sintaxa blade */
+<h1>Dourado</h1>
+
+    <!-- Blade condicionais -->
+    @if(10 < 18)
+        <p>Verdadeiro</p>
+    @endif
+
+    <p>{{$nome}}</p>
+    @if ($nome == "Samuel")
+        <p>O seu nome é {{$nome}} e você tem {{$idade}} anos e trabalha como {{$profissao}}</p>
+    @elseif ($nome == "Matheus")
+        <p>O seu nome é {{$nome}} e você tem {{$idade}} anos</p>
+    @else
+        <p>O seu nome não é Samuel e nem Matheus</p>
+    @endif
+
+    <!-- Loops blade -->
+    @for($i = 0; $i < count($arr); $i++)
+        <p>{{$arr[$i]}} - {{$i}}</p>
+    @endfor
+
+    @foreach ($nomes as $nome)
+        <p>{{$loop->index}}</p>
+        <p>{{$nome}}</p>
+    @endforeach
+    
+
+    <!-- PHP puro -->
+    @php
+        $nomeofc = "samuel";
+        echo $nomeofc;
+    @endphp
+
+    {{-- Este é o comentário no blade (anônimo)--}}
+```
+# Apoio Crud
+```php
+/* Criar Show table Laravel */
+<table class="table table-striped">
+    <thead class="">
+        <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>City</th>
+            <th>Private</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach ($events as $event )
+        <tr>
+            <td>{{ $cont++ }}</td>
+            <td>{{ $event->title }}</td>
+            <td>{{ $event->description }}</td>
+            <td>{{ $event->city }}</td>
+            @if($event->private == 1)
+                <td>Yes</td>
+            @else
+                <td>No</td>
+            @endif
+            <td> </td>
+        </tr>
+    @endforeach
+    </tbody>
+</table>
+```
 
