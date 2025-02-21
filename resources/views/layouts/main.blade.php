@@ -46,14 +46,12 @@
             </div>
         </nav>
     </header>
-    <div class="container-fluid">
         @yield('content')
     
         <footer class="container mt-2">
             <p>Dourado Dev &copy; 2025</p>
         </footer>
 
-    </div>
 
     {{-- SCRIPT DO BOOSTRAP  --}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
