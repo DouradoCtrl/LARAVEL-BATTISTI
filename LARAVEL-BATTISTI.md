@@ -293,3 +293,10 @@ Route::get('/produtos_query', function () {
 - faz o rollback e o migrate
 
 ``
+
+# ElOQUENT
+- ORM do laravel
+- Cada tabela tem um model responsável pela interação entre as requisições ao banco 
+- A convenção para o Model é o nome em singular com a primeira letra maiúscula, enquanto a tabela é a entidade no plural: Event e events
+- No model faremos poucas alterações
+
